@@ -1,0 +1,29 @@
+name: Termin Monitor – Bürgeramt Osnabrück
+
+on:
+  schedule:
+    - cron: '*/10 7-17 * * 1-5'  # Alle 10 Min, Mo–Fr, 7:00–17:00 Uhr
+  workflow_dispatch:               # Manuell starten möglich
+
+jobs:
+  check-termin:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository auschecken
+        uses: actions/checkout@v3
+
+      - name: Python einrichten
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Abhängigkeiten installieren
+        run: pip install requests beautifulsoup4
+
+      - name: Termin prüfen
+        env:
+          ABSENDER_EMAIL: ${{ mohamedalmzerli@gmail.com }}
+          ABSENDER_PASSWORT: ${{ mmow offb ipsn eawb }}
+          EMPFAENGER_EMAIL: ${{ mohamedalmzerli@gmail.com }}
+        run: python termin_monitor.py
