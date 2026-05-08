@@ -1,4 +1,0 @@
-
-
-ABSENDER_EMAIL   = "mohamedalmzerli@gmail.com"
-   ABSENDER_PASSWORT = "mmow offb ipsn eawb"   ← App-Passwort von Schritt 2
