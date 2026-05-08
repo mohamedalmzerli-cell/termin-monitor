@@ -2,7 +2,7 @@ name: Termin Monitor – Bürgeramt Osnabrück
 
 on:
   schedule:
-- cron: '*/10 7-17 * * *'  # Alle 10 Min, täglich 7:00–17:00 Uhr
+- cron: '*/5 7-17 * * *'  # Alle 5 Min, täglich 7:00–17:00 Uhr
   workflow_dispatch:
 
 jobs:
