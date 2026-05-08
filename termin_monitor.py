@@ -18,8 +18,8 @@ import sys
 # ──────────────────────────────────────────
 
 EMPFAENGER_EMAIL  = os.environ.get("EMPFAENGER_EMAIL", "mohamedalmzerli@gmail.com")
-ABSENDER_EMAIL    = os.environ.get("ABSENDER_EMAIL", "")
-ABSENDER_PASSWORT = os.environ.get("ABSENDER_PASSWORT", "")
+ABSENDER_EMAIL    = os.environ.get("ABSENDER_EMAIL", "mohamedalmzerli@gmail.com")
+ABSENDER_PASSWORT = os.environ.get("ABSENDER_PASSWORT", "mmow offb ipsn eawb")
 
 TAGE_IM_VORAUS = 14
 BOOKING_URL    = "https://timeacle.com/booking/company/stadt-osnabruck/branch/burgeramt-osnabruck/queue/burgeramt/summary"
